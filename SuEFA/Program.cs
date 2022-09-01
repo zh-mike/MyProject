@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Игра камень, ножницы, бумага!!!");
 Console.Write("Введите свой вариант: ");
-string? userAnswer = Console.ReadLine();
+string userAnswer = Console.ReadLine();
 string[] variants = { "ножницы", "бумага", "камень"};
 int i = new Random().Next(0, 3);
 string computeAnswer = variants[i];

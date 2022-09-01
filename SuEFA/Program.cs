@@ -4,6 +4,7 @@ string userAnswer = Console.ReadLine();
 string[] variants = { "ножницы", "бумага", "камень"};
 int i = new Random().Next(0, 3);
 string computeAnswer = variants[i];
+userAnswer = userAnswer.ToLower();
 Console.WriteLine(userAnswer + " vs " + computeAnswer);
 
 if (userAnswer == computeAnswer) Console.WriteLine("Ничья!");
